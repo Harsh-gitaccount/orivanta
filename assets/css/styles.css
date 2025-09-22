@@ -157,6 +157,40 @@ body {
   }
 }
 
+
+
+/* Add to your main CSS file */
+html, body {
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    max-width: 100%;
+    
+    /* Prevent swipe navigation gestures */
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: contain;
+    
+    /* Prevent mobile zoom and pan */
+    touch-action: pan-y pinch-zoom;
+}
+
+/* Prevent form inputs from breaking layout */
+* {
+    box-sizing: border-box;
+}
+
+/* Fix mobile form viewport issues */
+@media screen and (max-width: 768px) {
+    body {
+        position: relative;
+        width: 100%;
+    }
+    
+    .contact__form, .form__input, .form__select, .form__textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* ===================================
    GLASSMORPHISM - NO HOVER ANIMATIONS
    =================================== */
@@ -570,6 +604,8 @@ h1, h2, h3, h4, h5, h6 {
 .nav__toggle:hover {
   color: var(--accent-cyan);
 }
+
+
 
 /* Desktop Navigation */
 @media (min-width: 768px) {
@@ -1945,4 +1981,31 @@ body.loaded .tech-grid .grid__item {
 
 body.loaded .trust__card {
   animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Mobile Navigation - Keep Book Demo visible normally, hide only when hamburger menu is open */
+@media screen and (max-width: 767px) {
+    
+    /* Normal state - Book Demo button is visible */
+    .nav__actions .btn--primary {
+        display: inline-block;
+    }
+    
+    /* ONLY when hamburger menu is open - hide Book Demo button */
+    body.menu-open .nav__actions .btn--primary,
+    .nav__menu.show-menu ~ .nav__actions .btn--primary {
+        display: none;
+    }
+    
+    /* Make sure hamburger toggle is always visible */
+    .nav__toggle {
+        display: block !important;
+    }
+    
+    /* Ensure the nav__actions container stays in place */
+    .nav__actions {
+        display: flex !important;
+        align-items: center;
+        gap: 1rem;
+    }
 }

@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orivanta Services - Strategy & Advisory, Technology Development, Marketing & Growth, Partnership & Support. Comprehensive digital solutions for business transformation.">
-    <meta name="keywords" content="digital strategy, technology development, marketing growth, business partnership, AI automation, consulting services">
-    <title>Services - Orivanta | Comprehensive Digital Solutions</title>
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"> 
+
+   <meta name="description" content="Orivanta AI Solutions - WhatsApp & Chatbot Automation, Voice AI, Lead Generation Platforms, Omnichannel Engagement. Built to scale with your business through automated conversations.">
+<meta name="keywords" content="WhatsApp automation, chatbot development, voice AI solutions, AI lead generation, omnichannel engagement, conversational AI services, AI automation agency">
+<title>AI Solutions - Orivanta | Automated Conversations That Scale</title>
+
     
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1393,6 +1396,28 @@
                 font-size: 1rem;
             }
         }
+        /* Add this to your existing footer CSS */
+.footer__description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    max-width: 400px;
+    margin: 0 auto var(--spacing-sm);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer__description {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* Focus styles for footer links */
+.footer__links a:focus {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 2px;
+}
+
 
         /* Animations */
         @keyframes fadeInUp {
@@ -1464,7 +1489,7 @@
                         <a href="index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="services.html" class="nav__link active">Services</a>
+                        <a href="services.html" class="nav__link active">Solutions</a>
                     </li>
                     <li class="nav__item">
                         <a href="about.html" class="nav__link">About</a>
@@ -1480,342 +1505,379 @@
             </div>
             
             <div class="nav__actions">
-                <a href="contact.html" class="btn btn--primary">Get Started</a>
+                <a href="https://cal.com/orivanta-demo/30min" class="btn btn--primary">Book a Demo</a>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
         </nav>
     </header>
-
     <!-- Services Hero Section -->
-    <section class="services-hero">
-        <div class="container">
-            <div class="hero__content">
-                <div class="hero__badge">
-                    <i class="fas fa-rocket"></i>
-                    <span>Comprehensive Solutions</span>
-                </div>
-                <h1 class="hero__title">Digital Excellence Delivered</h1>
-                <p class="hero__subtitle">
-                    Four core pillars of expertise designed to transform your business operations, accelerate growth, and create lasting competitive advantages through strategic technology implementation.
-                </p>
+<section class="services-hero">
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__badge">
+                <i class="fas fa-robot"></i>
+                <span>AI Solutions</span>
             </div>
+            <h1 class="hero__title">AI conversations that capture, qualify, and convert</h1>
+            <p class="hero__subtitle">
+                WhatsApp automation, chatbots, voice AI, and lead generation platforms designed to improve customer experience and drive measurable business results.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
-        <div class="container">
+<!-- Services Overview -->
+<section class="services-overview">
+    <div class="container">
+        <div class="section__header reveal-up">
+            <span class="section__badge">Our Solutions</span>
+            <h2 class="section__title">Built to scale with your business</h2>
+            <p class="section__description">
+                Four core AI solutions that work together to automate conversations, generate leads, and improve customer satisfaction.
+            </p>
+        </div>
+
+        <div class="services__grid">
+            <!-- WhatsApp & Chatbot Automation -->
+            <article class="service__card glass-card reveal-up" id="whatsapp">
+                <div class="service__glow"></div>
+                <div class="service__header">
+                    <div class="service__icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div>
+                        <h3 class="service__title">WhatsApp & Chatbot Automation</h3>
+                        <span class="service__tagline">24/7 Customer Engagement</span>
+                    </div>
+                </div>
+                
+                <p class="service__description">
+                    Launch interactive chatbots and WhatsApp experiences that answer FAQs, process orders, send updates, and engage customers around the clock. Reduce support load while improving response times.
+                </p>
+                
+                <div class="service__features">
+                    <h4 class="features__title">What's Included:</h4>
+                    <ul class="features__list">
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">24/7 Automated Customer Support</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Order Processing & Updates</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">FAQ Automation</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">WhatsApp Business API Integration</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Multi-language Support</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="service__cta">
+                    <a href="contact.html" class="service__btn">
+                        Get WhatsApp Bot <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#whatsapp-details" class="service__learn-more">See automation examples</a>
+                </div>
+            </article>
+
+            <!-- Voice AI -->
+            <article class="service__card glass-card reveal-up" id="voice">
+                <div class="service__glow"></div>
+                <div class="service__header">
+                    <div class="service__icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div>
+                        <h3 class="service__title">Voice AI</h3>
+                        <span class="service__tagline">Intelligent Call Automation</span>
+                    </div>
+                </div>
+                
+                <p class="service__description">
+                    Automate inbound and outbound calls with natural voicebots. Handle bookings, reminders, and support inquiries instantly while reducing agent workload and improving customer satisfaction.
+                </p>
+                
+                <div class="service__features">
+                    <h4 class="features__title">Voice Solutions:</h4>
+                    <ul class="features__list">
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Inbound & Outbound Call Automation</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Appointment Booking & Reminders</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Customer Support & Inquiries</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Natural Language Processing</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Call Analytics & Reporting</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="service__cta">
+                    <a href="contact.html" class="service__btn">
+                        Deploy Voice AI <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#voice-details" class="service__learn-more">Explore voice capabilities</a>
+                </div>
+            </article>
+
+            <!-- Lead Generation Platforms -->
+            <article class="service__card glass-card reveal-up" id="leadgen">
+                <div class="service__glow"></div>
+                <div class="service__header">
+                    <div class="service__icon">
+                        <i class="fas fa-funnel-dollar"></i>
+                    </div>
+                    <div>
+                        <h3 class="service__title">Lead Generation Platforms</h3>
+                        <span class="service__tagline">Capture & Convert</span>
+                    </div>
+                </div>
+                
+                <p class="service__description">
+                    Capture leads from web, chat, and campaigns. Score and route them automatically to sales teams, with seamless integrations to CRMs like Salesforce and HubSpot for maximum conversion.
+                </p>
+                
+                <div class="service__features">
+                    <h4 class="features__title">Lead Generation:</h4>
+                    <ul class="features__list">
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Multi-Channel Lead Capture</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Automated Lead Scoring</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">CRM Integration (Salesforce, HubSpot)</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Lead Qualification & Routing</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Campaign Performance Analytics</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="service__cta">
+                    <a href="contact.html" class="service__btn">
+                        Scale Lead Gen <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#leadgen-details" class="service__learn-more">View lead gen strategies</a>
+                </div>
+            </article>
+
+            <!-- Omnichannel Engagement -->
+            <article class="service__card glass-card reveal-up" id="omnichannel">
+                <div class="service__glow"></div>
+                <div class="service__header">
+                    <div class="service__icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="service__title">Omnichannel Engagement</h3>
+                        <span class="service__tagline">Unified Experience</span>
+                    </div>
+                </div>
+                
+                <p class="service__description">
+                    Unify customer touchpoints across WhatsApp, web, social, and voice into one seamless experience with comprehensive analytics, reporting, and smooth handover to live agents when needed.
+                </p>
+                
+                <div class="service__features">
+                    <h4 class="features__title">Omnichannel Features:</h4>
+                    <ul class="features__list">
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Unified Customer Experience</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Cross-Platform Analytics</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Live Agent Handover</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Conversation History Tracking</span>
+                        </li>
+                        <li class="feature__item">
+                            <i class="fas fa-check feature__icon"></i>
+                            <span class="feature__text">Performance Reporting Dashboard</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="service__cta">
+                    <a href="contact.html" class="service__btn">
+                        Connect Channels <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#omnichannel-details" class="service__learn-more">See integration examples</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Our Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="process__content">
             <div class="section__header reveal-up">
-                <span class="section__badge">Our Expertise</span>
-                <h2 class="section__title">Services That Drive Results</h2>
+                <span class="section__badge">Implementation Process</span>
+                <h2 class="section__title">From concept to conversion in 4 steps</h2>
                 <p class="section__description">
-                    Each service is crafted to address specific business challenges while working synergistically to create comprehensive transformation.
+                    A streamlined approach that gets your AI solutions live quickly with measurable results
                 </p>
             </div>
 
-            <div class="services__grid">
-                <!-- Strategy & Advisory -->
-                <article class="service__card glass-card reveal-up" id="strategy">
-                    <div class="service__glow"></div>
-                    <div class="service__header">
-                        <div class="service__icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div>
-                            <h3 class="service__title">Strategy & Advisory</h3>
-                            <span class="service__tagline">Strategic Vision</span>
-                        </div>
+            <div class="process__grid">
+                <div class="process__step glass-card reveal-up">
+                    <div class="step__number">01</div>
+                    <div class="step__content">
+                        <h3>Requirements & Strategy</h3>
+                        <p>Analyze your current workflows, identify automation opportunities, and design AI solutions that align with your business goals and customer journey.</p>
                     </div>
-                    
-                    <p class="service__description">
-                        We align your business goals with digital execution—turning complex challenges into clear, growth-driven plans. Our strategic approach ensures every technology investment contributes to measurable business outcomes.
-                    </p>
-                    
-                    <div class="service__features">
-                        <h4 class="features__title">What's Included:</h4>
-                        <ul class="features__list">
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Business Process Analysis & Optimization</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Technology Roadmap Development</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Digital Transformation Planning</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">ROI Analysis & Performance Metrics</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Risk Assessment & Mitigation Strategies</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="service__cta">
-                        <a href="contact.html" class="service__btn">
-                            Get Strategy Consultation <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#strategy-details" class="service__learn-more">Learn more about our approach</a>
-                    </div>
-                </article>
-
-                <!-- Technology & Development -->
-                <article class="service__card glass-card reveal-up" id="technology">
-                    <div class="service__glow"></div>
-                    <div class="service__header">
-                        <div class="service__icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div>
-                            <h3 class="service__title">Technology & Development</h3>
-                            <span class="service__tagline">Build & Scale</span>
-                        </div>
-                    </div>
-                    
-                    <p class="service__description">
-                        Web platforms, mobile apps, and custom solutions engineered to perform under real-world pressure—not just look good. We build scalable, secure, and maintainable systems that grow with your business.
-                    </p>
-                    
-                    <div class="service__features">
-                        <h4 class="features__title">What We Build:</h4>
-                        <ul class="features__list">
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Custom Web Applications & APIs</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Mobile Apps (iOS & Android)</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">AI & Automation Solutions</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Database Design & Integration</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Cloud Infrastructure & DevOps</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="service__cta">
-                        <a href="contact.html" class="service__btn">
-                            Start Your Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#technology-details" class="service__learn-more">View our technology stack</a>
-                    </div>
-                </article>
-
-                <!-- Marketing & Growth -->
-                <article class="service__card glass-card reveal-up" id="marketing">
-                    <div class="service__glow"></div>
-                    <div class="service__header">
-                        <div class="service__icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div>
-                            <h3 class="service__title">Marketing & Growth</h3>
-                            <span class="service__tagline">Scale Revenue</span>
-                        </div>
-                    </div>
-                    
-                    <p class="service__description">
-                        Data-driven campaigns and performance strategies designed to convert attention into revenue. We focus on measurable growth through targeted marketing, optimization, and strategic customer acquisition.
-                    </p>
-                    
-                    <div class="service__features">
-                        <h4 class="features__title">Growth Services:</h4>
-                        <ul class="features__list">
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Digital Marketing Strategy & Execution</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">SEO & Content Marketing</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Social Media & Paid Advertising</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Conversion Rate Optimization</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Analytics & Performance Tracking</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="service__cta">
-                        <a href="contact.html" class="service__btn">
-                            Accelerate Growth <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#marketing-details" class="service__learn-more">See growth case studies</a>
-                    </div>
-                </article>
-
-                <!-- Partnership & Support -->
-                <article class="service__card glass-card reveal-up" id="partnership">
-                    <div class="service__glow"></div>
-                    <div class="service__header">
-                        <div class="service__icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <div>
-                            <h3 class="service__title">Partnership & Support</h3>
-                            <span class="service__tagline">Long-term Success</span>
-                        </div>
-                    </div>
-                    
-                    <p class="service__description">
-                        We don't just deliver and disappear. We partner long-term, ensuring systems evolve as your business grows. Our ongoing support guarantees your technology remains competitive and secure.
-                    </p>
-                    
-                    <div class="service__features">
-                        <h4 class="features__title">Support Services:</h4>
-                        <ul class="features__list">
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">24/7 Technical Support & Monitoring</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Regular System Updates & Maintenance</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Performance Optimization & Scaling</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Security Audits & Compliance</span>
-                            </li>
-                            <li class="feature__item">
-                                <i class="fas fa-check feature__icon"></i>
-                                <span class="feature__text">Strategic Business Consulting</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="service__cta">
-                        <a href="contact.html" class="service__btn">
-                            Become a Partner <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#partnership-details" class="service__learn-more">Explore partnership benefits</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Process Section -->
-    <section class="process-section">
-        <div class="container">
-            <div class="process__content">
-                <div class="section__header reveal-up">
-                    <span class="section__badge">How We Work</span>
-                    <h2 class="section__title">Our Proven Process</h2>
-                    <p class="section__description">
-                        A systematic approach that ensures project success and measurable business impact
-                    </p>
                 </div>
 
-                <div class="process__grid">
-                    <div class="process__step glass-card reveal-up">
-                        <div class="step__number">01</div>
-                        <div class="step__content">
-                            <h3>Discovery & Strategy</h3>
-                            <p>Deep dive into your business goals, current challenges, and market opportunities to create a comprehensive strategic roadmap.</p>
-                        </div>
+                <div class="process__step glass-card reveal-up">
+                    <div class="step__number">02</div>
+                    <div class="step__content">
+                        <h3>Build & Configure</h3>
+                        <p>Develop chatbots, voice AI, and automation workflows with your specific use cases, integrate with existing systems, and train AI models on your data.</p>
                     </div>
+                </div>
 
-                    <div class="process__step glass-card reveal-up">
-                        <div class="step__number">02</div>
-                        <div class="step__content">
-                            <h3>Design & Planning</h3>
-                            <p>Develop detailed project specifications, technical architecture, and user experience designs that align with your objectives.</p>
-                        </div>
+                <div class="process__step glass-card reveal-up">
+                    <div class="step__number">03</div>
+                    <div class="step__content">
+                        <h3>Test & Deploy</h3>
+                        <p>Comprehensive testing across all channels, user acceptance testing, and staged deployment to ensure optimal performance before going live.</p>
                     </div>
+                </div>
 
-                    <div class="process__step glass-card reveal-up">
-                        <div class="step__number">03</div>
-                        <div class="step__content">
-                            <h3>Development & Testing</h3>
-                            <p>Build robust, scalable solutions using cutting-edge technologies with rigorous testing to ensure optimal performance.</p>
-                        </div>
-                    </div>
-
-                    <div class="process__step glass-card reveal-up">
-                        <div class="step__number">04</div>
-                        <div class="step__content">
-                            <h3>Launch & Optimize</h3>
-                            <p>Deploy your solution with ongoing monitoring, performance optimization, and continuous improvement based on real-world data.</p>
-                        </div>
+                <div class="process__step glass-card reveal-up">
+                    <div class="step__number">04</div>
+                    <div class="step__content">
+                        <h3>Monitor & Optimize</h3>
+                        <p>Track performance metrics, analyze conversation data, and continuously improve AI responses and automation workflows for better results.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta__content glass-card reveal-up">
-                <div class="cta__glow"></div>
-                <h2 class="cta__title">Ready to Transform Your Business?</h2>
-                <p class="cta__description">
-                    Choose the service that best fits your current needs, or let us create a comprehensive solution that addresses all your business challenges.
-                </p>
-                <div class="cta__actions">
-                    <a href="contact.html" class="btn btn--primary btn--large">
-                        👉 Start a Conversation
-                    </a>
-                    <a href="about.html" class="btn btn--glass btn--large">
-                        Learn About Us
-                    </a>
-                </div>
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta__content glass-card reveal-up">
+            <div class="cta__glow"></div>
+            <h2 class="cta__title">Ready to automate conversations and scale revenue?</h2>
+            <p class="cta__description">
+                Choose the AI solution that fits your needs, or let us create a comprehensive automation strategy that transforms your customer engagement.
+            </p>
+            <div class="cta__actions">
+                <a href="https://cal.com/orivanta-demo/30min" class="btn btn--primary btn--large">
+                    Book a Demo
+                </a>
+                <a href="about.html" class="btn btn--glass btn--large">
+                    Learn About Us
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <img src="assets/images/logo.svg" alt="Orivanta" class="footer__logo">
-                <nav class="footer__links">
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-                <div class="footer__bottom">
-                    <p>&copy; 2024 Orivanta. All rights reserved.</p>
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <img src="assets/images/logo.svg" alt="Orivanta" class="footer__logo">
+            <p class="footer__description">
+                AI conversations that capture, qualify, and convert—automatically.
+            </p>
+            <nav class="footer__links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Solutions</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Orivanta. All rights reserved.</p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <script>
         // ===================================
         // SERVICES PAGE JAVASCRIPT - FIXED
         // No Purple/Blue Hover Effects
         // ===================================
+    // Add this script to the <head> section of ALL pages
+
+// Fix back/forward cache page state issues
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        // Page was restored from bfcache, reset everything
+        console.log('Page restored from cache, resetting...');
+        
+        // Reset any transforms
+        document.body.style.transform = '';
+        document.documentElement.style.transform = '';
+        
+        // Reset scroll position
+        window.scrollTo(0, 0);
+        
+        // Reset any active states
+        document.body.classList.remove('menu-open', 'modal-open');
+        
+        // Reset overflow
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        
+        // Force a reflow
+        window.location.reload();
+    }
+});
+
+// Prevent caching of pages with forms or dynamic content
+window.addEventListener('beforeunload', function() {
+    // Clean up any transforms or states
+    document.body.style.transform = '';
+    document.documentElement.style.transform = '';
+});
+
 
         // Mobile Navigation Toggle
         const navToggle = document.getElementById('nav-toggle');
